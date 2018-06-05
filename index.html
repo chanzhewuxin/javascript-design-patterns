@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript Design Partterns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+    <script src="Interface.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+<div id="content"></div>
+<script>
+    window.onload = function () {
+
+        var list = new ResultList();
+
+        var result = new ResultFormatter(list);
+
+        var results = result.renderResults();
+
+        var div = document.getElementById('content');
+
+        div.appendChild(results);
+    }
+
+    function ResultList() {
+        this.getDate = function () {
+            return new Date();
+        }
+
+        this.getResults = function () {
+            var arr = [];
+            for (var i = 0; i < 10; i++) {
+                var rd = parseInt(Math.random() * 10);
+                arr.push('item ' + rd);
+            }
+            return arr;
+        }
+    }
+
+</script>
+</body>
+
+</html>
