@@ -7,8 +7,16 @@
     <title>Javascript Design Partterns</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+    <script src="Common.js"></script>
+    <script src="Mixin.js"></script>
     <script src="Interface.js"></script>
     <script src="main.js"></script>
+    <script src="Extend.js"></script>
+    <script src="Person.js"></script>
+    <script src="Author.js"></script>
+    <script src="InheritDemo.js"></script>
+    <script src="EditInPlaceField.js"></script>
+
 </head>
 
 <body>
@@ -16,15 +24,30 @@
 <script>
     window.onload = function () {
 
-        var list = new ResultList();
+//        var list = new ResultList();
+//
+//        var result = new ResultFormatter(list);
+//
+//        var results = result.renderResults();
+//
+//        var div = document.getElementById('content');
+//
+//        div.appendChild(results);
+//
+//
+//        var author = new Author('李四',['三国演义 1','红楼梦']);
+//        console.log(author.getName(), author.getBooks());
 
-        var result = new ResultFormatter(list);
+//        console.log('CompoundObject.childObject.num :' + CompoundObject.childObject.num);
+//        console.log('compoundObjectClone.childObject.num:' + compoundObjectClone.childObject.num);
 
-        var results = result.renderResults();
+//        augment(Author, Mixin, 'serialize');
+//        var au = new Author('李思', ['book 1', 'book 2']);
+//        console.log('getName:',au.getName());
+//        console.log('serialize:',au.serialize());
 
-        var div = document.getElementById('content');
-
-        div.appendChild(results);
+        var titleClassial = new EditInPlaceField('titleClassical',document.body,'Title Here');
+        var currentTitleText = titleClassial.getValue();
     }
 
     function ResultList() {
