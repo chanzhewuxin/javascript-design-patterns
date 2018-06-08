@@ -16,39 +16,56 @@
     <script src="Author.js"></script>
     <script src="InheritDemo.js"></script>
     <script src="EditInPlaceField.js"></script>
+    <!--第六章方法的链式调用 js-->
+    <script src="Singleton.js"></script>
 
+    <style>
+        span{
+            display:none;
+        }
+    </style>
 </head>
 
 <body>
 <div id="content"></div>
+<span id="test-1">test-1</span>
+<span id="test-2">test-2</span>
 <script>
-    window.onload = function () {
+    //    window.onload = function () {
 
-//        var list = new ResultList();
-//
-//        var result = new ResultFormatter(list);
-//
-//        var results = result.renderResults();
-//
-//        var div = document.getElementById('content');
-//
-//        div.appendChild(results);
-//
-//
-//        var author = new Author('李四',['三国演义 1','红楼梦']);
-//        console.log(author.getName(), author.getBooks());
+    //        var list = new ResultList();
+    //
+    //        var result = new ResultFormatter(list);
+    //
+    //        var results = result.renderResults();
+    //
+    //        var div = document.getElementById('content');
+    //
+    //        div.appendChild(results);
+    //
+    //
+    //        var author = new Author('李四',['三国演义 1','红楼梦']);
+    //        console.log(author.getName(), author.getBooks());
 
-//        console.log('CompoundObject.childObject.num :' + CompoundObject.childObject.num);
-//        console.log('compoundObjectClone.childObject.num:' + compoundObjectClone.childObject.num);
+    //        console.log('CompoundObject.childObject.num :' + CompoundObject.childObject.num);
+    //        console.log('compoundObjectClone.childObject.num:' + compoundObjectClone.childObject.num);
 
-//        augment(Author, Mixin, 'serialize');
-//        var au = new Author('李思', ['book 1', 'book 2']);
-//        console.log('getName:',au.getName());
-//        console.log('serialize:',au.serialize());
+    //        augment(Author, Mixin, 'serialize');
+    //        var au = new Author('李思', ['book 1', 'book 2']);
+    //        console.log('getName:',au.getName());
+    //        console.log('serialize:',au.serialize());
 
-        var titleClassial = new EditInPlaceField('titleClassical',document.body,'Title Here');
-        var currentTitleText = titleClassial.getValue();
-    }
+    //        var titleClassial = new EditInPlaceField('titleClassical', document.body, 'Title Here');
+    //        var currentTitleText = titleClassial.getValue();
+
+    //    }
+
+
+    $(window).addEvent('load', function () {
+        $('test-1', 'test-2').show().setStyle('color', 'red').addEvent('click', function (e) {
+            $(this).setStyle('color', 'green');
+        })
+    })
 
     function ResultList() {
         this.getDate = function () {
