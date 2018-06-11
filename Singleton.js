@@ -30,10 +30,7 @@
 * 第六章  方法的链式调用
 *
 */
-Function.prototype.method = function (name, fn) {
-    this.prototype[name] = fn;
-    return this;
-}
+
 
 (function () {
 
@@ -94,14 +91,14 @@ Function.prototype.method = function (name, fn) {
         }
     }
 
-    // window.$ = function () {
-    //     return new _$(arguments);
-    // }
-
-    window.installHelper = function (scope, interface) {
-        scope[interface] = function () {
-            return new _$(arguments);
-        }
+    window.$ = function () {
+        return new _$(arguments);
     }
+
+    // window.installHelper = function (scope, interface) {
+    //     scope[interface] = function () {
+    //         return new _$(arguments);
+    //     }
+    // }
 
 })();
