@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af87ead0-dabb-476d-99a2-eafafb6f546c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AjaxConnectionQueue.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/queue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common.js" afterPath="$PROJECT_DIR$/Common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Singleton.js" afterPath="$PROJECT_DIR$/Singleton.js" />
-    </list>
+    <list default="true" id="af87ead0-dabb-476d-99a2-eafafb6f546c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -233,7 +226,7 @@
       <workItem from="1528256397986" duration="15199000" />
       <workItem from="1528338624693" duration="8120000" />
       <workItem from="1528425098717" duration="9154000" />
-      <workItem from="1528687838731" duration="12675000" />
+      <workItem from="1528687838731" duration="12711000" />
     </task>
     <task id="LOCAL-00001" summary="工厂模式">
       <created>1528428975880</created>
@@ -246,7 +239,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54772000" />
+    <option name="totallyTimeSpent" value="54808000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
