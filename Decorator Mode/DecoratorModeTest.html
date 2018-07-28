@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decorator Mode</title>
+    <script src="../Singleton.js"></script>
+    <script src="ListBuilder.js"></script>
+    <script src="SimpleProfiler.js"></script>
+    <script src="MethodProfiler.js"></script>
+
+
+</head>
+<body>
+<div id="list-container"></div>
+
+<script>
+    //    var list = new ListBuilder('list-container', 50000);
+    //    list = new SimpleProfiler(list);
+    //    list.buildList();
+    var list = new ListBuilder('list-container', 5000);
+    list = new MethodProfiler(list);
+    list.buildList('ol');
+    list.buildList('ul');
+    list.removeLists('ol');
+    list.removeLists('ul');
+</script>
+</body>
+</html>

@@ -41,9 +41,9 @@
             if (typeof element === 'string') {
                 element = document.getElementById(element);
             }
-            // if (arguments.length === 1) {
-            //     return element;
-            // }
+            if (arguments.length === 1) {
+                return element;
+            }
             this.elements.push(element);
         }
     }

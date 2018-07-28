@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar Test</title>
+    <script src="../Interface.js"></script>
+    <script src="../Common.js"></script>
+    <script src="../Singleton.js"></script>
+    <script src="Calendar.js"></script>
+    <!--<script src="Tooltip.js"></script>-->
+    <script src="TooltipShareware.js"></script>
+
+    <style>
+        #link-id {
+            cursor: pointer;
+        }
+
+        .tooltip {
+            height: 100px;
+            width: 200px;
+            background: #bbbbbb;
+        }
+    </style>
+</head>
+<body>
+<div id="calendar"></div>
+<div id="link-id">link - id</div>
+<script>
+    //    var year = new CalendarYear(2018, $('calendar'));
+    //    year.display();
+    //    var linkElement = $('link-id');
+    //    var tt = new Tooltip(linkElement, 'Lorem ipsum...');
+
+    TooltipManager.addTooltip($('link-id'), 'lorem ipsum...');
+
+    tt.show(50, 50);
+</script>
+</body>
+</html>
